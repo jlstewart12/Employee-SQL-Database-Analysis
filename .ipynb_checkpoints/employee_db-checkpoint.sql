@@ -80,8 +80,9 @@ SELECT e.emp_no, e.last_name, e.first_name, e.gender, s.salary
 FROM salaries AS s
 INNER JOIN employees AS e ON
 e.emp_no=s.emp_no;
+ORDER BY emp_no;
 
-SELECT first_name, hire_date
+SELECT first_name, last_name
 FROM employees
 WHERE hire_date >= '1986-01-01' AND hire_date < '1986-12-31';
 
@@ -114,3 +115,4 @@ SELECT last_name, COUNT(last_name) AS "Name Count"
 FROM employees
 GROUP BY last_name
 ORDER BY last_name;
+ORDER BY COUNT(last_name) DESC;
