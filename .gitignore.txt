@@ -46,4 +46,4 @@ Mapbox api key
 config.js
 
 postgres pw
-config.py
+*S.py
