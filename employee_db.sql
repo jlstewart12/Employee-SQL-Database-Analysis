@@ -76,11 +76,11 @@ REFERENCES "employees" ("emp_no");
 
 SELECT * from employees;
 
-SELECT e.emp_no, e.last_name, e.first_name, e.gender, s.salary
-FROM salaries AS s
-INNER JOIN employees AS e ON
-e.emp_no=s.emp_no;
-ORDER BY emp_no;
+SELECT  emp.emp_no, emp.last_name, emp.first_name, emp.gender, sal.salary
+FROM employees as emp
+    LEFT JOIN salaries as sal
+    ON (emp.emp_no = sal.emp_no)
+ORDER BY emp.emp_no;
 
 SELECT first_name, last_name
 FROM employees
