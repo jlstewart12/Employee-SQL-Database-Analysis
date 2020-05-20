@@ -1,3 +1,5 @@
+Mock employee database from the 1980s and 1990s.
+
 ## Data Modeling
 
 #### ERD development based on CSV data
